@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MedPlus - Your Prescription, Simplified</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5fbff;
+    color: #18334a;
+    line-height: 1.6;
+}
+
+header {
+    background: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px #dceaf2;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #087fc1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #18334a;
+    margin-left: 22px;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 420px;
+    padding: 75px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: linear-gradient(120deg, #e4f6ff, #ffffff);
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #087fc1;
+    line-height: 1.2;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.hero img {
+    width: 300px;
+    max-width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    background: #087fc1;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+h2 {
+    color: #087fc1;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #dceaf2;
+}
+
+.card .emoji {
+    font-size: 38px;
+}
+
+.card h3 {
+    margin: 12px 0;
+    color: #087fc1;
+}
+
+.steps {
+    background: #eaf7ff;
+}
+
+.cta {
+    background: #087fc1;
+    color: white;
+}
+
+.cta h2 {
+    color: white;
+}
+
+.cta .btn {
+    background: white;
+    color: #087fc1;
+}
+
+footer {
+    background: #12334b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">💊 MedPlus</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div class="hero-content">
+        <h1>Never Miss Your Medicines Again!</h1>
+        <p>
+            Understand your prescription and manage your medicines
+            easily with MedPlus. Your smart medicine reminder partner.
+        </p>
+        <a href="#features" class="btn">Explore MedPlus</a>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/822/822143.png"
+         alt="Medicine and healthcare illustration">
+</div>
+
+<section id="about">
+    <h2>About MedPlus</h2>
+    <p>
+        MedPlus is an AI-powered medicine reminder application.
+        It helps users identify medicine information from prescriptions,
+        organize their medicine schedules, and receive timely reminders.
+    </p>
+</section>
+
+<section class="steps">
+    <h2>How MedPlus Works</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">📄</div>
+            <h3>Step 1</h3>
+            <p>Upload your doctor's prescription.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">🔍</div>
+            <h3>Step 2</h3>
+            <p>Extract medicine details using OCR technology.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">📅</div>
+            <h3>Step 3</h3>
+            <p>Organize your medicine schedule.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">🔔</div>
+            <h3>Step 4</h3>
+            <p>Receive timely medicine reminders.</p>
+        </div>
+    </div>
+</section>
+
+<section id="features">
+    <h2>Our Key Features</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">📷</div>
+            <h3>Prescription Upload</h3>
+            <p>Upload prescription images easily.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">💊</div>
+            <h3>Medicine Details</h3>
+            <p>View extracted medicine names and prescribed dosages.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">⏰</div>
+            <h3>Smart Reminders</h3>
+            <p>Get reminders according to your medicine schedule.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">❤️</div>
+            <h3>Easy Management</h3>
+            <p>Manage your medicine routine conveniently.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Why Choose MedPlus?</h2>
+    <div class="cards">
+        <div class="card">✔ Easy to Use</div>
+        <div class="card">✔ Saves Time</div>
+        <div class="card">✔ Helps Avoid Missed Doses</div>
+        <div class="card">✔ Supports Elderly People</div>
+    </div>
+</section>
+
+<section class="cta" id="contact">
+    <h2>Make Medicine Management Simple!</h2>
+    <p>Stay organized and manage your medicine schedule with MedPlus.</p>
+    <a href="mailto:medplus@example.com" class="btn">Contact Us</a>
+</section>
+
+<footer>
+    <h3>💊 MedPlus – Your Prescription, Simplified</h3>
+    <p>Email: medplus@example.com</p>
+    <p>© 2026 MedPlus. Student Project.</p>
+    <p>Always follow your doctor's prescription.</p>
+</footer>
+
+</body>
+</html>
